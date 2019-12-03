@@ -35,6 +35,7 @@ If you require further assistance contact the support team @ [Discord](https://d
 
 ## Section B: Obtaining the coins to run a masternode. 
 Now you need to get the coins to run a masternode.  Remember, you will need a little more than 1000 coins to start a masternode.  1000.01 coins would be enough, but usually i get 1001 coins to be safe.  You need this small amount of extra coins to pay the transaction fee to make the "collateral transaction" in a later step below.  If you already have enough coins to run the masternode, then just skip to next section (Creating the collateral transaction).  If you do not have enough coins yet, then follow these instructions.
+
 ***Step 1***
 * Open the wallet and go to the `Receive` tab to create a new receiving address.
 * Type a label for this address in the `Label` field. If you are getting coins from an exchange, use a label like `From Graviex` or if you are buying in presale use a lable like `From Presale`.
@@ -46,6 +47,7 @@ Now you need to get the coins to run a masternode.  Remember, you will need a li
 
 ## Section C: Creating the collateral tranaction.
 In this section you will be sending yourself exactly 1000 coins in one single transaction. This is known as the `collateral transaction`. As long as you are running your masternode, these coins will be locked in your wallet and will not stake, they will only be used to keep your masternode running.
+
 ***Step 1***
 * Open the wallet and go to the `Receive` tab to create a new masternode (receiving) address.
 * Type `MN1` as the label for this address in the `Label` field.
