@@ -56,7 +56,7 @@ In this section you will be sending yourself exactly 1000 coins in one single tr
 ***
 
 ***Step 2***
-*Go to the `Send` tab in the wallet and paste the address from your clipboard into the `Pay To` field.  The `Label` field should automatically fill in with `MN` (or whatever you labelled your masternode address).  If it does not autofill with the masternode address label, then do not continue as you will not be sending the coins to yourself, try step 1 above again.
+* Go to the `Send` tab in the wallet and paste the address from your clipboard into the `Pay To` field.  The `Label` field should automatically fill in with `MN` (or whatever you labelled your masternode address).  If it does not autofill with the masternode address label, then do not continue as you will not be sending the coins to yourself, try step 1 above again.
 ***
 
 ***Step 3***
