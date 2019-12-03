@@ -94,7 +94,8 @@ In this section you will be sending yourself exactly 1000 coins in one single tr
 ## Section E: Downloading and installing BitVise. 
 
 ***Step 1***
-* Download Bitvise [here](https://dl.bitvise.com/BvSshClient-Inst.exe)
+* Download Bitvise [here](https://bitvise.com/ssh-client-download)
+* Click the button in the middle of screen to download latest version.
 ***
 
 ***Step 2***
@@ -107,93 +108,90 @@ In this section you will be sending yourself exactly 1000 coins in one single tr
 ## Section F: Connecting to the VPS & Installing the MN script via Bitvise.
 
 ***Step 1***
-* Copy your VPS IP (you can find this by going to the server tab within Vultr and clicking on your server. 
-![Example-Vultr](https://i.imgur.com/z41MiwY.png)
+* Log into Vultr [here] (https://my.vultr.com)
+* In the middle of the screen, click the link to your VPS you jsut created
+* Here you can find your VPS IP and password for use in the following steps. To copy the IP or the password to your clipboard when needed in following steps, click the `copy` button.
 ***
 
 ***Step 2***
-* Open the bitvise application and fill in the "Hostname" box with the IP of your VPS.
-![Example-PuttyInstaller](https://i.imgur.com/vkN1alC.png)
+* Open the bitvise application
 ***
 
 ***Step 3***
-* Copy the root password from the VULTR server page.
-![Example-RootPass](https://i.imgur.com/JnXQXav.png)
+* In the bitvise application, fill in the following...
+  * `Host1` - paste the IP address you copied from the Vultr screen
+  * `Port` - type `22`
+  * `Username` - type `root`
+  * `Initial method` - choose `password` in the dropdown
+  * `Store encrypted password in profile` - check this box if you don't want to have to type the password each time. This is fine, you will have no coins on this VPS, so even if someone hacked onto your VPS, they could never get to any of your coins
+  * `Password` - paste the password you copied from the Vultr screen
+* Click the `Save Profile` button to save this information to easily log in the next time
+* Click the `Log In` button to log into the VPS
 ***
 
 ***Step 4***
-* Type "root" as the login/username.
-![Example-Root](https://i.imgur.com/5TPoE9x.png)
+* Paste the code below into the Bitvise terminal then press enter (it will just go to a new line)
+
+`wget -q https://raw.githubusercontent.com/allforonebusiness/MN-install/AFO_Install.sh`
+
 ***
 
-***Step 5*** 
-* Paste the password into the Bitvise terminal by right clicking (it will not show the password so just press enter)
-![Example-RootPassEnter](https://i.imgur.com/zVhOAKu.png)
+***Step 5***
+* Paste the code below into the Bitvise terminal then press enter
+
+`bash AFO_Install.sh`
+
 ***
 
-***Step 6*** 
-* Once you have clicked open it will open a security alert (click yes).  
+***Step 6***
+* Sit back and wait for the install (this can take 10-20 mins)
 ***
 
 ***Step 7***
-* Paste the code below into the Bitvise terminal then press enter (it will just go to a new line)
-![Example-RootPassEnter](https://i.imgur.com/K6xlnav.png)
+* When prompted to enter your Masternode Gen key - press enter
 
-`wget -q https://raw.githubusercontent.com/AcreageCoin/MasterNode-Script/master/acr_install.sh`
 ***
 
 ***Step 8***
-* Paste the code below into the Bitvise terminal then press enter
-
-`bash acr_install.sh`
-
-![Example-Bash](https://i.imgur.com/myvmKTE.png)
-
-***
-
-***Step 9***
-* Sit back and wait for the install (this will take 10-20 mins)
-***
-
-***Step 10***
-* When prompted to enter your Masternode Gen key - press enter
-
-![Example-installing](https://i.imgur.com/sLvWd1S.png)
-***
-
-***Step 11***
 * You will now see all of the relavant information for your server.
 * Keep this terminal open as we will need the info for the wallet setup.
-![Example-installing](https://i.imgur.com/Q87LcnW.png)
+
 ***
 
 # Section G: Connecting & Starting the masternode 
 
 ***Step 1***
-* Go to the tools tab within the wallet and click open "masternode configuration file" 
-![Example-create](https://i.imgur.com/COsfvfA.png)
+* Open your windows or Mac wallet (the wallet with the coins) and go to `Tools`->`Debug Monitor` on the top menu bar.  Type `getmasternodeoutputs` into the textbox at bottom and hit the <enter> key on the keyboard.  Leave this window open.
 ***
 
 ***Step 2***
+* Go to the `Tools`->`Open Masternode Configuration File` on the top menu bar. A text file will open. Copy and paste the following information into the file in this order.
 
-* Fill in the form. 
-* For `Alias` type something like "MN01" **don't use spaces**
-* The `Address` is the IP and port of your server (this will be in the Bitvise terminal that you still have open).
-* The `GenKey` is your masternode GEN key (This is also in the Bitvise terminal that you have open).
-* The `TxHash` is the transaction ID/long key that you copied to the text file.
-* The `Output Index` is the 0 or 1 that you copied to your text file.
-![Example-create](https://i.imgur.com/9b1I3bk.png)
 
-Click "File Save"
+***Step 2***
+* Create a new line in the file with the following information
+* [MNAlias] [VPS_IP:PORT] [MasternodePrivateKey] [MasternodeOutputsTXHash] [MasternodeOutputsIDX]
+* The information comes from the following locations (see screenshot also)
+  * MNAlias - use any name you like, but it must be unique in this file. Meaning, you cannot have 2 lines with MN1 at the beginning
+  * [VPS_IP:PORT] - This value is in the Bitvise terminal window
+  * [MasternodePrivateKey] - This value is in the Bitvise terminal window
+  * [MasternodeOutputsTXHash] - This value is what you get when you typed `getmasternodeoputputs` in your local cold wallet
+  * [MasternodeOutputsIDX] - This value is what you get when you typed `getmasternodeoputputs` in your local cold wallet
+
+* Save the masternode.conf file and close it.
 ***
 
 ***Step 3***
-* Close out of the wallet and reopen Wallet
-*Click on the Masternodes tab "My masternodes"
-* Click start all in the masternodes tab
+* Close the local cold wallet and reopen it
 ***
 
 ***step 4***
+* Click on the `Transactions` tab in your local cold wallet.
+* Change the `Type` dropdown box to show only transactions `To Yourself`
+* Hover over the top transaction and make sure it says it has more than 16 confirmations (any number over 15 is fine).  If it does not yet have 15 confirmations, then wait a few minutes and check it again. Once it has at least 16 confirmations, move to next step.
+
+* Click start all in the masternodes tab
+
 * Check the status of your masternode within the VPS by using the command below:
 
 `arc-cli masternode status`
