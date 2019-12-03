@@ -2,7 +2,7 @@
 # All For One Business Masternode Setup Guide
 This guide will assist you in setting up a All For One Business Masternode on a Linux Server running Ubuntu 16.04. (this may also work on Ubuntu 18.04, but 16.04 is the suggested version)
 
-This guide will show you the safest way to run a masternode.  This setup is knows as a Hot/Cold wallet setup.  In this setup you will have 2 wallets (one with the coins, and one without the coins).  It is the safest setup because your coins will reside in a "cold" wallet ("cold" means that it does not need to constantly be connected to the internet). In this setup, there is very little risk of someone hacking onto your wallet and taking your coins.
+This guide will show you the safest setup for running a masternode.  This type of setup is known as a Hot/Cold wallet setup.  In this type setup you will have 2 wallets (one with the coins, and one without the coins).  It is the safest setup because your coins will reside in a "cold" wallet ("cold" means that it does not need to constantly be connected to the internet). In this setup, there is very little risk of someone hacking onto your wallet and taking your coins.
 
 If you require further assistance contact the support team @ [Discord](https://discord.gg/F7WEQNy)
 ***
@@ -25,9 +25,10 @@ If you require further assistance contact the support team @ [Discord](https://d
 ## Section A: Preparing the local (cold) wallet 
 ***Step 1***
 * Download the latest "QT" wallet for your operating system
-  * Windows 32bit (https://www.google.com)
-  * Windows 64bit (https://www.google.com)
-  * Macintosh (https://www.google.com)
+  * Windows 32bit (https://github.com/allforonebusiness/binaries-windows32bit/raw/master/allforonebusiness-3.4.0-win32-setup.exe)
+  * Windows 64bit (https://github.com/allforonebusiness/binaries-windows/raw/master/allforonebusiness-qt.exe)
+  * Macintosh (https://github.com/allforonebusiness/binaries-macOS/raw/master/allforonebusiness-qt.dmg)
+  * Linux (https://github.com/allforonebusiness/binaries-linux/raw/master/allforonebusiness-qt)
 ***
 
 ***Step 2***
@@ -41,7 +42,10 @@ Now you need to get the coins to run a masternode.  Remember, you will need a li
 * Open the wallet and go to the `Receive` tab to create a new receiving address.
 * Type a label for this address in the `Label` field. If you are getting coins from an exchange, use a label like `From Graviex` or if you are buying in presale use a lable like `From Presale`.
 * Click the `Request Payment` button.
+![Create Receiving Address Screen 1/2](https://github.com/BadFerret/MasterNode-Script/images/SectionBStep1.jpg "Create Receiving Address 1/2")
 * A new window will pop up, in that window, you will see an address labelled `address`.  This is the address you will receive your coins on. Click the `Copy Address` button at the bottom of the window to copy the address to your clipboard. If you are withdrawing from the exchange, withdraw to this address.  If you are buying from presale, give this address to the person selling you the coins.
+![Create Receiving Address Screen 1/2](https://github.com/BadFerret/MasterNode-Script/images/SectionBStep1-2.jpg "Create Receiving Address 1/2")
+
   *NOTE: Always send a small amount of coins to your address first to test it.  If the test is successful, then send the full amount.  Meaning, if you are withdrawing from an exchange, just withdraw 1 coin.  If you receive that coin in your wallet, then withdraw the rest of the coins.
 * Once you have at least 1000.01 coins in your wallet, you can move on the the next section.  
 ***
@@ -54,14 +58,17 @@ In this section you will be sending yourself exactly 1000 coins in one single tr
 * Type `MN1` as the label for this address in the `Label` field.
 * Click the `Request Payment` button.
 * A new window will pop up, in that window, you will see an address labelled `address`.  This will be your masternode address and it is where you will send the 1000 coins. Click the `Copy Address` button at the bottom of the window to copy the address to your clipboard.
+![Create MN Address](https://github.com/BadFerret/MasterNode-Script/images/SectionCStep1.jpg "Create MN Address")
 ***
 
 ***Step 2***
 * Go to the `Send` tab in the wallet and paste the address from your clipboard into the `Pay To` field.  The `Label` field should automatically fill in with `MN` (or whatever you labelled your masternode address).  If it does not autofill with the masternode address label, then do not continue as you will not be sending the coins to yourself, try step 1 above again.
+![Fill In Send Fields](https://github.com/BadFerret/MasterNode-Script/images/SectionCStep2.jpg "Fill In Send Fields")
 ***
 
 ***Step 3***
 * Enter exactly 1000 in the `Amount` box. And then click the `Send` button.
+![Send Collateral Coins](https://github.com/BadFerret/MasterNode-Script/images/SectionCStep3.jpg "Send Collateral Coins")
 ***
 
 ## Section D: Creating the VPS within [Vultr](https://www.vultr.com/?ref=8337866-4F) 
