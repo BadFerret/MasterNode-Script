@@ -1,4 +1,4 @@
-![Acreage-Logo](https://i.imgur.com/RThcyRa.png)
+![Logo](https://allforonebusiness.org/wp-content/uploads/2018/12/Logo_allforone.png)
 # Acreage Masternode Setup Guide (Ubuntu 16.04)
 This guide will assist you in setting up a Acreage Masternode on a Linux Server running Ubuntu 16.04. (Use at your own risk)
 
