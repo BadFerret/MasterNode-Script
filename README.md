@@ -1,26 +1,32 @@
 ![Logo](https://allforonebusiness.org/wp-content/uploads/2018/12/Logo_allforone.png)
-# Acreage Masternode Setup Guide (Ubuntu 16.04)
-This guide will assist you in setting up a Acreage Masternode on a Linux Server running Ubuntu 16.04. (Use at your own risk)
+# All For One Business Masternode Setup Guide
+This guide will assist you in setting up a All For One Business Masternode on a Linux Server running Ubuntu 16.04. (this may also work on Ubuntu 18.04, but 16.04 is the suggested version)
 
-If you require further assistance contact the support team @ [Discord](https://discord.gg/4CBmQyF)
+This guide will show you the safest way to run a masternode.  This setup is knows as a Hot/Cold wallet setup.  In this setup you will have 2 wallets (one with the coins, and one without the coins).  It is the safest setup because your coins will reside in a "cold" wallet ("cold" means that it does not need to constantly be connected to the internet). In this setup, there is very little risk of someone hacking onto your wallet and taking your coins.
+
+If you require further assistance contact the support team @ [Discord](https://discord.gg/F7WEQNy)
 ***
 ## Requirements
-1) **5,000 Acreage coins.**
-2) **A Vultr VPS running Linux Ubuntu 16.04.**
-3) **A Windows local wallet.**
+1) **1,001 Acreage coins. (1000.01 coins will work, but it is simpler to say 1001 is required)**
+2) **A Vultr VPS running Linux Ubuntu 16.04. (Ubuntu 18.04 may work, but it is suggested to use 16.04)**
+3) **A Windows, Mac, or Linux QT wallet running on a local machine (like your home computer).**
 4) **An SSH client such as [Bitvise](https://dl.bitvise.com/BvSshClient-Inst.exe)**
 ***
 ## Contents
-* **Section A**: Creating the VPS within [Vultr](https://www.vultr.com/?ref=7296974).
-* **Section B**: Downloading and installing Bitvise.
-* **Section C**: Connecting to the VPS and installing the MN script via Bitvise.
-* **Section D**: Preparing the local wallet.
+* **Section A**: Preparing the local (cold) wallet
+* **Section B**: Obtaining coins to run a masternode
+* **Section C**: Downloading and installing Bitvise.
+* **Section D**: Connecting to the VPS and installing the MN script via Bitvise.
 * **Section E**: Connecting & Starting the masternode.
 ***
 
-## Section A: Creating the VPS within [Vultr](https://www.vultr.com/?ref=7296974) 
+## Section A: Preparing the local (cold) wallet 
 ***Step 1***
-* Register at [Vultr](https://www.vultr.com/?ref=7296974)
+* Download the latest "QT" wallet for your operating system
+- [Windows 32bit] (https://www.google.com)
+- [Windows 64bit] (https://www.google.com)
+- [Macintosh] (https://www.google.com)
+
 ***
 
 ***Step 2***
