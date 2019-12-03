@@ -14,10 +14,11 @@ If you require further assistance contact the support team @ [Discord](https://d
 ***
 ## Contents
 * **Section A**: Preparing the local (cold) wallet
-* **Section B**: Obtaining coins to run a masternode
-* **Section C**: Downloading and installing Bitvise.
-* **Section D**: Connecting to the VPS and installing the MN script via Bitvise.
-* **Section E**: Connecting & Starting the masternode.
+* **Section B**: Obtaining the coins to run a masternode
+* **Section C**: Creating the collateral transaction
+* **Section D**: Downloading and installing Bitvise.
+* **Section E**: Connecting to the VPS and installing the MN script via Bitvise.
+* **Section F**: Connecting and starting the masternode.
 ***
 
 ## Section A: Preparing the local (cold) wallet 
@@ -32,34 +33,32 @@ If you require further assistance contact the support team @ [Discord](https://d
 * Install the wallet and allow it to synchronize fully. If there are no connections or it is synchronizing slowly, go to the discord server and search for `addnode` nodes to add to your wallet to speed it up.
 ***
 
-## Section B: Obtaining coins to run a masternode. 
-Now you need to get the coins to run a masternode.  Remember, you will need a little more than 1000 coins to start a masternode.  1000.01 coins would be enough, but usually i get 1001 coins to be safe.  You need this small amount of extra coins to pay the transaction fee to make the "collateral transaction" in a later step below.  If you already have enough coins to run the masternode, then just skip to the next step (create collateral transaction).  If you do not have enough coins, then follow these instructions.
+## Section B: Obtaining the coins to run a masternode. 
+Now you need to get the coins to run a masternode.  Remember, you will need a little more than 1000 coins to start a masternode.  1000.01 coins would be enough, but usually i get 1001 coins to be safe.  You need this small amount of extra coins to pay the transaction fee to make the "collateral transaction" in a later step below.  If you already have enough coins to run the masternode, then just skip to next section (Creating the collateral transaction).  If you do not have enough coins yet, then follow these instructions.
 ***Step 1***
-* Download Bitvise [here](https://dl.bitvise.com/BvSshClient-Inst.exe)
+* Open the wallet and go to the `Receive` tab to create a new receiving address.
+* Type a label for this address in the `Label` field. If you are getting coins from an exchange, use a label like `From Graviex` or if you are buying in presale use a lable like `From Presale`.
+* Click the `Request Payment` button.
+* A new window will pop up, in that window, you will see an address labelled `address`.  This is the address you will receive your coins on. Click the `Copy Address` button at the bottom of the window to copy the address to your clipboard. If you are withdrawing from the exchange, withdraw to this address.  If you are buying from presale, give this address to the person selling you the coins.
+  *NOTE: Always send a small amount of coins to your address first to test it.  If the test is successful, then send the full amount.  Meaning, if you are withdrawing from an exchange, just withdraw 1 coin.  If you receive that coin in your wallet, then withdraw the rest of the coins.
+* Once you have at least 1000.01 coins in your wallet, you can move on the the next section.  
+***
+
+## Section C: Creating the collateral tranaction.
+In this section you will be sending yourself exactly 1000 coins in one single transaction. This is known as the `collateral transaction`. As long as you are running your masternode, these coins will be locked in your wallet and will not stake, they will only be used to keep your masternode running.
+***Step 1***
+* Open the wallet and go to the `Receive` tab to create a new masternode (receiving) address.
+* Type `MN1` as the label for this address in the `Label` field.
+* Click the `Request Payment` button.
+* A new window will pop up, in that window, you will see an address labelled `address`.  This will be your masternode address and it is where you will send the 1000 coins. Click the `Copy Address` button at the bottom of the window to copy the address to your clipboard.
 ***
 
 ***Step 2***
-* Select the correct installer depending upon your operating system. Then follow the install instructions. 
-
-![Example-BitVise Installer](https://i.imgur.com/yF3694G.png)
-***
-
-
-## Section C: Connecting to the VPS & Installing the MN script via Bitvise.
-
-***Step 1***
-* Copy your VPS IP (you can find this by going to the server tab within Vultr and clicking on your server. 
-![Example-Vultr](https://i.imgur.com/z41MiwY.png)
-***
-
-***Step 2***
-* Open the bitvise application and fill in the "Hostname" box with the IP of your VPS.
-![Example-PuttyInstaller](https://i.imgur.com/vkN1alC.png)
+*Go to the `Send` tab in the wallet and paste the address from your clipboard into the `Pay To` field.  The `Label` field should automatically fill in with `MN` (or whatever you labelled your masternode address).  If it does not autofill with the masternode address label, then do not continue as you will not be sending the coins to yourself, try step 1 above again.
 ***
 
 ***Step 3***
-* Copy the root password from the VULTR server page.
-![Example-RootPass](https://i.imgur.com/JnXQXav.png)
+* Enter exactly 1000 in the `Amount` box. And then click the `Send` button.
 ***
 
 ***Step 4***
