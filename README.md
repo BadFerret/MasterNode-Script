@@ -67,6 +67,7 @@ In this section you will be sending yourself exactly 1000 coins in one single tr
 ## Section D: Creating the VPS within [Vultr](https://www.vultr.com/?ref=8337866-4F) 
 ***Step 1***
 * Register at [Vultr](https://www.vultr.com/?ref=8337866-4F)
+  *NOTE: This is a referral link.  I will get a small commission if you use it. If you have friends that already use Vultr, you can get a referral link from them and they will get a commission.  Whichever link you use (mine or your friends) you should get a welcome bonus of $25 to $50 after you link a payment method to your account. Currently my link gives $50 but your friend's link may also give that.)
 ***
 
 ***Step 2***
@@ -80,23 +81,14 @@ In this section you will be sending yourself exactly 1000 coins in one single tr
 
 ***Step 4***
 * Choose a server type: Ubuntu 16.04
+* Choose a server size: $5/month is sufficient
 ![Example-OS](https://i.imgur.com/aSMqHUK.png)
 ***
 
-***Step 5***
-* Choose a server size: $5/mo will be fine 
-![Example-OS](https://i.imgur.com/UoGoHcM.png)
-***
-
-***Step 6*** 
-* Set a Server Hostname & Label (name it whatever you want)
-![Example-hostname](https://i.imgur.com/uu0rvOr.png)
-***
-
-***Step 7***
+***Step 5*** 
+* Set a Server Hostname (use any name you want to help you remember this VPS. You can use the coins name to help you remember this server has AFO on it, but in the future you can add more coins to this VPS, so you may simply want to name it Ubuntu1601_1 if you plan to do that)
 * Click "Deploy now"
-
-![Example-Deploy](https://i.imgur.com/4qpYuH0.png)
+![Example-hostname](https://i.imgur.com/uu0rvOr.png)
 ***
 
 ## Section E: Downloading and installing BitVise. 
