@@ -7,7 +7,7 @@ This guide will show you the safest way to run a masternode.  This setup is know
 If you require further assistance contact the support team @ [Discord](https://discord.gg/F7WEQNy)
 ***
 ## Requirements
-1) **1,001 Acreage coins. (1000.01 coins will work, but it is simpler to say 1001 is required)**
+1) **1,001 AFO coins. (1000.01 coins will work, but it is simpler to say 1001 is required)**
 2) **A Vultr VPS running Linux Ubuntu 16.04. (Ubuntu 18.04 may work, but it is suggested to use 16.04)**
 3) **A Windows, Mac, or Linux QT wallet running on a local machine (like your home computer).**
 4) **An SSH client such as [Bitvise](https://dl.bitvise.com/BvSshClient-Inst.exe)**
@@ -23,45 +23,17 @@ If you require further assistance contact the support team @ [Discord](https://d
 ## Section A: Preparing the local (cold) wallet 
 ***Step 1***
 * Download the latest "QT" wallet for your operating system
-- [Windows 32bit] (https://www.google.com)
-- [Windows 64bit] (https://www.google.com)
-- [Macintosh] (https://www.google.com)
-
+  * Windows 32bit (https://www.google.com)
+  * Windows 64bit (https://www.google.com)
+  * Macintosh (https://www.google.com)
 ***
 
 ***Step 2***
-* After you have added funds to your account go [here](https://my.vultr.com/deploy/) to create your Server
+* Install the wallet and allow it to synchronize fully. If there are no connections or it is synchronizing slowly, go to the discord server and search for `addnode` nodes to add to your wallet to speed it up.
 ***
 
-***Step 3*** 
-* Choose a server location (preferably somewhere close to you)
-![Example-Location](https://i.imgur.com/ozi7Bkr.png)
-***
-
-***Step 4***
-* Choose a server type: Ubuntu 16.04
-![Example-OS](https://i.imgur.com/aSMqHUK.png)
-***
-
-***Step 5***
-* Choose a server size: $5/mo will be fine 
-![Example-OS](https://i.imgur.com/UoGoHcM.png)
-***
-
-***Step 6*** 
-* Set a Server Hostname & Label (name it whatever you want)
-![Example-hostname](https://i.imgur.com/uu0rvOr.png)
-***
-
-***Step 7***
-* Click "Deploy now"
-
-![Example-Deploy](https://i.imgur.com/4qpYuH0.png)
-***
-
-
-## Section B: Downloading and installing BitVise. 
-
+## Section B: Obtaining coins to run a masternode. 
+Now you need to get the coins to run a masternode.  Remember, you will need a little more than 1000 coins to start a masternode.  1000.01 coins would be enough, but usually i get 1001 coins to be safe.  You need this small amount of extra coins to pay the transaction fee to make the "collateral transaction" in a later step below.  If you already have enough coins to run the masternode, then just skip to the next step (create collateral transaction).  If you do not have enough coins, then follow these instructions.
 ***Step 1***
 * Download Bitvise [here](https://dl.bitvise.com/BvSshClient-Inst.exe)
 ***
