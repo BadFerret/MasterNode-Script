@@ -16,9 +16,10 @@ If you require further assistance contact the support team @ [Discord](https://d
 * **Section A**: Preparing the local (cold) wallet
 * **Section B**: Obtaining the coins to run a masternode
 * **Section C**: Creating the collateral transaction
-* **Section D**: Downloading and installing Bitvise.
-* **Section E**: Connecting to the VPS and installing the MN script via Bitvise.
-* **Section F**: Connecting and starting the masternode.
+* **Section D**: Creating the VPS within Vultr
+* **Section E**: Downloading and installing Bitvise.
+* **Section F**: Connecting to the VPS and installing the MN script via Bitvise.
+* **Section G**: Connecting and starting the masternode.
 ***
 
 ## Section A: Preparing the local (cold) wallet 
@@ -61,6 +62,71 @@ In this section you will be sending yourself exactly 1000 coins in one single tr
 
 ***Step 3***
 * Enter exactly 1000 in the `Amount` box. And then click the `Send` button.
+***
+
+## Section D: Creating the VPS within [Vultr](https://www.vultr.com/?ref=8337866-4F) 
+***Step 1***
+* Register at [Vultr](https://www.vultr.com/?ref=8337866-4F)
+***
+
+***Step 2***
+* After you have added funds to your account go [here](https://my.vultr.com/deploy/) to create your Server
+***
+
+***Step 3*** 
+* Choose a server location (preferably somewhere close to you)
+![Example-Location](https://i.imgur.com/ozi7Bkr.png)
+***
+
+***Step 4***
+* Choose a server type: Ubuntu 16.04
+![Example-OS](https://i.imgur.com/aSMqHUK.png)
+***
+
+***Step 5***
+* Choose a server size: $5/mo will be fine 
+![Example-OS](https://i.imgur.com/UoGoHcM.png)
+***
+
+***Step 6*** 
+* Set a Server Hostname & Label (name it whatever you want)
+![Example-hostname](https://i.imgur.com/uu0rvOr.png)
+***
+
+***Step 7***
+* Click "Deploy now"
+
+![Example-Deploy](https://i.imgur.com/4qpYuH0.png)
+***
+
+## Section E: Downloading and installing BitVise. 
+
+***Step 1***
+* Download Bitvise [here](https://dl.bitvise.com/BvSshClient-Inst.exe)
+***
+
+***Step 2***
+* Select the correct installer depending upon your operating system. Then follow the install instructions. 
+
+![Example-BitVise Installer](https://i.imgur.com/yF3694G.png)
+***
+
+
+## Section F: Connecting to the VPS & Installing the MN script via Bitvise.
+
+***Step 1***
+* Copy your VPS IP (you can find this by going to the server tab within Vultr and clicking on your server. 
+![Example-Vultr](https://i.imgur.com/z41MiwY.png)
+***
+
+***Step 2***
+* Open the bitvise application and fill in the "Hostname" box with the IP of your VPS.
+![Example-PuttyInstaller](https://i.imgur.com/vkN1alC.png)
+***
+
+***Step 3***
+* Copy the root password from the VULTR server page.
+![Example-RootPass](https://i.imgur.com/JnXQXav.png)
 ***
 
 ***Step 4***
@@ -109,40 +175,7 @@ In this section you will be sending yourself exactly 1000 coins in one single tr
 ![Example-installing](https://i.imgur.com/Q87LcnW.png)
 ***
 
-## Section D: Preparing the Local wallet
-
-***Step 1***
-* Download and install the Acreage wallet [here](https://acreagecoin.io/)
-***
-
-***Step 2***
-* Send EXACLY 5,000 ACR to a receive address within your wallet.
-***
-
-***Step 3***
-* Create a text document to temporarily store information that you will need. 
-***
-
-***step 4***
-* Go to the console within the wallet 
-
-![Example-console](https://i.imgur.com/6NM7G9a.png)
-***
-
-***Step 5***
-* Type the command below and press enter 
-
-`masternode outputs` 
-
-![Example-outputs](https://i.imgur.com/GD7Ro1m.png)
-***
-
-***Step 6***
-* Copy the long key (this is your transaction ID) and the 1 or 2 at the end (this is your output index)
-* Paste these into the text document you created earlier as you will need them in the next step.
-***
-
-# Section E: Connecting & Starting the masternode 
+# Section G: Connecting & Starting the masternode 
 
 ***Step 1***
 * Go to the tools tab within the wallet and click open "masternode configuration file" 
