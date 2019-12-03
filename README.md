@@ -74,7 +74,7 @@ In this section you will be sending yourself exactly 1000 coins in one single tr
 ***
 
 ***Step 3*** 
-* Choose "Cloud Computer" and then choose a server location (preferably somewhere close to you)
+* Choose "Cloud Compute" option and then choose a server location (preferably somewhere close to you)
 ![Example-Location](https://i.imgur.com/ozi7Bkr.png)
 ***
 
