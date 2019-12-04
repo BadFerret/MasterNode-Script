@@ -139,14 +139,14 @@ In this section you will be sending yourself exactly 1000 coins in one single tr
 ***Step 4***
 * Paste the code below into the Bitvise terminal then press enter (it will just go to a new line because it is just downloading a small script)
 
-`wget -q https://raw.githubusercontent.com/BadFerret/MasterNode-Script/master/AFO_MN_INSTALL.sh`
+`wget -q https://raw.githubusercontent.com/BadFerret/MasterNode-Script/master/AFO_mn_install.sh`
 
 ***
 
 ***Step 5***
 * Paste the code below into the Bitvise terminal then press enter (this will run the script from above and may take 10 to 20 minutes to complete)
 
-`chmod +x AFO_MN_Install.sh`
+`chmod +x AFO_mn_install.sh`
 
 ***
 
@@ -154,7 +154,7 @@ In this section you will be sending yourself exactly 1000 coins in one single tr
 ***Step 6***
 * Paste the code below into the Bitvise terminal then press enter (this will run the script from above and may take 10 to 20 minutes to complete)
 
-`bash AFO_MN_Install.sh`
+`bash AFO_mn_install.sh`
 
 ***
 
