@@ -44,7 +44,7 @@ Now you need to get the coins to run a masternode.  Remember, you will need a li
 * Click the `Request Payment` button.
 ![Create Receiving Address Screen 1/2](https://github.com/BadFerret/MasterNode-Script/raw/master/images/SectionBStep1.jpg "Create Receiving Address 1/2")
 * A new window will pop up, in that window, you will see an address labelled `address`.  This is the address you will receive your coins on. Click the `Copy Address` button at the bottom of the window to copy the address to your clipboard. If you are withdrawing from the exchange, withdraw to this address.  If you are buying from presale, give this address to the person selling you the coins.
-![Create Receiving Address Screen 1/2](https://github.com/BadFerret/MasterNode-Script/raw/master/images/SectionBStep1-2.jpg "Create Receiving Address 1/2")
+![Create Receiving Address Screen 1/2](https://github.com/BadFerret/MasterNode-Script/raw/master/images/SectionBStep1-2.jpg "Create Receiving Address 1/2"){:height="50%" width="50%"}
 
   *NOTE: Always send a small amount of coins to your address first to test it.  If the test is successful, then send the full amount.  Meaning, if you are withdrawing from an exchange, just withdraw 1 coin.  If you receive that coin in your wallet, then withdraw the rest of the coins.
 * Once you have at least 1000.01 coins in your wallet, you can move on the the next section.  
