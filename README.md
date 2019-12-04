@@ -171,7 +171,7 @@ In this section you will be sending yourself exactly 1000 coins in one single tr
 
 ***Step 3***
 * Create a new line in the file with the following information
-`* MNAlias VPS_IP:PORT MasternodePrivateKey MasternodeOutputsTXHash MasternodeOutputsIDX`
+* `MNAlias VPS_IP:PORT MasternodePrivateKey MasternodeOutputsTXHash MasternodeOutputsIDX`
 * The information comes from the following locations (see screenshot also)
   * `MNAlias` - use any name you like, but it must be unique in this file. Meaning, you cannot have 2 lines with MN1 at the beginning
   * `VPS_IP:PORT` - This value is in the Bitvise terminal window
