@@ -144,7 +144,7 @@ In this section you will be sending yourself exactly 1000 coins in one single tr
 ***
 
 ***Step 5***
-* Paste the code below into the Bitvise terminal then press enter (this will display messages and may take 10 to 20 minutes to complete)
+* Paste the code below into the Bitvise terminal then press enter (this will run the script from above and may take 10 to 20 minutes to complete)
 
 `bash AFO_MN_Install.sh`
 
