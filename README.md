@@ -209,4 +209,6 @@ In this section you will be sending yourself exactly 1000 coins in one single tr
 * Go to your VPS wallet and type the following command and hit the <enter> key
 `allforonebusiness-cli getmasternodestatus`
 * It should display that the masternode was successfully started.  If you do not receive the message in the screenshot below that it was started repeat step 7 and 8 again. If after 2 or 3 attempt, it does not report as successfully started on the VPS, then ask for help in the discord server.
+
 ![Verify Masternode on VPS](https://github.com/BadFerret/MasterNode-Script/raw/master/images/SectionGStep8.jpg "Verify Masternode on VPS")
+***
