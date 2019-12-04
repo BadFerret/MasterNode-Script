@@ -14,14 +14,35 @@ RED='\033[0;31m'
 GREEN='\033[0;32m'
 NC='\033[0m'
 
+progressfilt () {
+  local flag=false c count cr=$'\r' nl=$'\n'
+  while IFS='' read -d '' -rn 1 c
+  do
+    if $flag
+    then
+      printf '%c' "$c"
+    else
+      if [[ $c != $cr && $c != $nl ]]
+      then
+        count=0
+      else
+        ((count++))
+        if ((count > 1))
+        then
+          flag=true
+        fi
+      fi
+    fi
+  done
+}
 
 function compile_node() {
   echo -e "Prepare to download $COIN_NAME"
   TMP_FOLDER=$(mktemp -d)
   cd $TMP_FOLDER
-  wget --progress=bar:force $COIN_DAEMON_REPO 2>&1
-  wget --progress=bar:force $COIN_CLI_REPO 2>&1
-  wget --progress=bar:force $COIN_TX_REPO 2>&1
+  wget --progress=bar:force $COIN_DAEMON_REPO 2>&1 | progressfilt
+  wget --progress=bar:force $COIN_CLI_REPO 2>&1 | progressfilt
+  wget --progress=bar:force $COIN_TX_REPO 2>&1 | progressfilt
   compile_error
   chmod +x $COIN_NAME*
   cp $COIN_NAME* /usr/local/bin
