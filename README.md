@@ -170,7 +170,7 @@ In this section you will be sending yourself exactly 1000 coins in one single tr
 # Section G: Connecting & Starting the masternode 
 
 ***Step 1***
-* Open your local cold wallet (the Windows, Mac, or Linux wallet you installed in Section 1 at the beginning of this tutorial).  Go to `Tools`->`Debug Monitor` on the top menu bar.  Type `getmasternodeoutputs` into the textbox at bottom and hit the <enter> key on the keyboard.  Leave this window open and move it to the side.
+* Open your local cold wallet (the Windows, Mac, or Linux wallet you installed in Section 1 at the beginning of this tutorial).  Go to `Tools`->`Debug Monitor` on the top menu bar.  Type `getmasternodeoutputs` into the textbox at bottom and hit the enter key on the keyboard.  Leave this window open and move it to the side.
 ***
 
 ***Step 2***
@@ -214,7 +214,7 @@ In this section you will be sending yourself exactly 1000 coins in one single tr
 ***
 
 ***Step 8***
-* Go to your VPS wallet and type the following command and hit the <enter> key
+* Go to your VPS wallet and type the following command and hit the enter key
 `allforonebusiness-cli getmasternodestatus`
 * It should display that the masternode was successfully started.  If you do not receive the message in the screenshot below that it was started repeat step 7 and 8 again. If after 2 or 3 attempt, it does not report as successfully started on the VPS, then ask for help in the discord server.
 
